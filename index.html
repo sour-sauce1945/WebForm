@@ -6,22 +6,23 @@
     <title>Btech Form</title>
     <style>
         body {
-            background: linear-gradient(to right, #355C7D, #6C5B7B, #C06C84);
+            background: linear-gradient(to right, #355C7D,#6C5B7B,#C06C84);
             color: blanchedalmond;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
         }
 
-        .form-container1,
-        .form-container2,
-        .form-container3 {
-            width: 300px;
-            border: 3px solid;
-            border-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+        .form-container1
+         {
+            width: 390px;
+            border: 2px solid;
+            background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
             border-image-slice: 1;
+            border-radius: 30px;
             padding: 20px;
             margin: 50px auto;
         }
+        
     </style>
 </head>
 <body>
@@ -40,18 +41,45 @@
         </form>
     </div>
 
-    <div class="form-container2">
+    <div class="form-container1">
         <form>
             <label for="email"><h2>Provide Email</h2></label><br>
             <input type="text" id="email" name="email" placeholder="Enter email ID"><br>
         </form>
     </div>
 
-    <div class="form-container3">
+    <div class="form-container1">
         <form>
-            <label for="age"><h2>Enter your Age</h2></label><br>
-            <input type="text" id="age" name="age" placeholder="Enter your age"><br>
+            <h2>Gender</h2>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Femal" name="gender" value="Female">
+            <label for="Male">Female</label>
         </form>
     </div>
+
+    <div class="form-container1">
+        <form>
+            <label for="email"><h2>Date of Birth </h2></label><br>
+            <input type="date" id="birthday" name="birthday" value="DOB" ><br>
+        </form>
+    </div>
+
+
+    <div class="form-container1">
+        <form>
+            <h2>Academic Year</h2>
+            <input type="radio" id="FY" name="Year" value="FY">
+            <label for="FY">First Year</label>
+            <input type="radio" id="SY" name="Year" value="SY">
+            <label for="SY">Second Year</label>
+            <input type="radio" id="TY" name="Year" value="TY">
+            <label for="TY">Third year</label>
+            <input type="radio" id="Btech" name="Year" value="Btech">
+            <label for="Btech">Final Year</label>
+            
+        </form>
+    </div>
+
 </body>
 </html>
