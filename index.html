@@ -12,7 +12,13 @@
             padding: 10px;
         }
 
-        .form-container
+        .form-container,
+        .form-container2,
+        .form-container3,
+        .form-container4,
+        .form-container5,
+        .form-container6,
+        .form-container7
          {
             width: 390px;
             border: 2px solid;
@@ -24,7 +30,14 @@
             transition: transform 0.6s ease-in-out;
         }
 
-        .form-container:hover {
+        .form-container:hover,
+        .form-container2:hover,
+        .form-container3:hover,
+        .form-container4:hover,
+        .form-container5:hover,
+        .form-container6:hover,
+        .form-container7:hover
+         {
             transform: scale(1.1); 
 
         }
@@ -64,43 +77,43 @@
     </span>
       
     <h2>Please fill out the necessary fields </h2>
-    
+    <form onsubmit="sendMail(); return false;">
     <div class="form-container">
-        <form onsubmit="sendEmail() ; reset() ; return false ; ">
+        
             <label for="fname"><h2>Enter your Name</h2></label><br>
             <input type="text" id="fname" name="fname" placeholder="Enter first name"><br>
             <label for="lname"></label><br>
             <input type="text" id="lname" name="lname" placeholder="Enter last name">
-        </form>
+        
     </div>
 
-    <div class="form-container">
-        <form onsubmit="sendEmail() ; reset() ; return false ; ">
+    <div class="form-container2">
+        
             <label for="email"><h2>Provide Email</h2></label><br>
             <input type="text" id="email" name="email" placeholder="Enter email ID"><br>
-        </form>
+        
     </div>
 
-    <div class="form-container">
-        <form onsubmit="sendEmail() ; reset() ; return false ; ">
+    <div class="form-container3">
+        
             <h2>Gender</h2>
             <input type="radio" id="Male" name="gender" value="Male">
             <label for="Male">Male</label>
             <input type="radio" id="Female" name="gender" value="Female">
             <label for="Female">Female</label>
-        </form>
+        
     </div>
 
-    <div class="form-container">
-        <form onsubmit="sendEmail() ; reset() ; return false ; ">
+    <div class="form-container4">
+        
             <label for="email"><h2>Date of Birth </h2></label><br>
             <input type="date" id="birthday" name="birthday" value="DOB" ><br>
-        </form>
+        
     </div>
 
 
-    <div class="form-container">
-        <form onsubmit="sendEmail() ; reset() ; return false ; ">
+    <div class="form-container5">
+        
             <h2>Academic Year</h2>
             <input type="radio" id="FY" name="Year" value="FY">
             <label for="FY">First Year</label>
@@ -110,31 +123,29 @@
             <label for="TY">Third year</label>
             <input type="radio" id="Btech" name="Year" value="Btech">
             <label for="Btech">Final Year</label>
-        </form>
+        
     </div>
-    <div class = "form-container">
-        <form onsubmit="sendEmail() ; reset() ; return false ; ">
+    <div class = "form-container6">
+        
             <h2>Contact Info</h2>   
             <input type="text" id="snumber" name="contact" placeholder="Student contact"><br>
             <label for="snumber"></label><br>
             <input type="text" id="pnumber" name="contact" placeholder="parent contact">
             <label for="pnumber"></label>
-        </form>
+        
     </div>
 
-    <div class="form-container">
+    <div class="form-container7">
         <h2>Residential Address</h2>    
-        <form onsubmit="sendEmail() ; reset() ; return false ; ">
+        
             <label for="address"></label>
             <textarea id="address" name="residence" placeholder="Your address" rows="4" cols="50"></textarea>
-        </form>
+        
     </div>
-    <div class="form-button">
-        <form onsubmit="sendEmail(); this.reset(); return false;">
-            
-            <button type="submit">Send</button>
-        </form>
+    <div class="form-button">   
+            <button class="btn btn-primary">Send</button>
+        
     </div>
-   
+   </form>
     </body>
 </html>
