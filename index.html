@@ -44,9 +44,14 @@
         .rounded{
             border-radius: 8px;
         }
-        
-       .form-button{
-        padding : 20px;
+        .form-button {
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        }
+
+        .form-button button {
         background: #ff5361;
         color: #fff;
         font-size: 15px;
@@ -54,9 +59,14 @@
         outline: none;
         cursor: pointer;
         width: 150px;
-        margin: 20px auto 0;
         border-radius: 30px;
-       }
+        padding: 10px 20px; 
+        transition: background 0.3s ease;
+        }
+
+        .form-button button:hover {
+        background: #ff3d4e; 
+        }
        
         
     </style>
@@ -97,9 +107,9 @@
     <div class="form-container3">
         
             <h2>Gender</h2>
-            <input type="radio" id="Male" name="gender" value="Male">
+            <input type="radio" id="gender" name="gender" value="Male">
             <label for="Male">Male</label>
-            <input type="radio" id="Female" name="gender" value="Female">
+            <input type="radio" id="gender" name="gender" value="Female">
             <label for="Female">Female</label>
         
     </div>
@@ -115,15 +125,18 @@
     <div class="form-container5">
         
             <h2>Academic Year</h2>
-            <input type="radio" id="FY" name="Year" value="FY">
-            <label for="FY">First Year</label>
-            <input type="radio" id="SY" name="Year" value="SY">
-            <label for="SY">Second Year</label>
-            <input type="radio" id="TY" name="Year" value="TY">
-            <label for="TY">Third year</label>
-            <input type="radio" id="Btech" name="Year" value="Btech">
-            <label for="Btech">Final Year</label>
-        
+            <input type="radio" id="year" name="Year" value="FY">
+            <label for="year">First Year</label>
+            
+            <input type="radio" id="year" name="Year" value="SY">
+            <label for="year">Second Year</label>
+            
+            <input type="radio" id="year" name="Year" value="TY">
+            <label for="year">Third year</label>
+            
+            <input type="radio" id="year" name="Year" value="Btech">
+            <label for="year">Final Year</label>
+            
     </div>
     <div class = "form-container6">
         
