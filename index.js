@@ -20,6 +20,7 @@ emailjs.send(serviceID,templateID,params)
     res =>{
         document.getElementById("fname").value="";
         document.getElementById("lname").value="";
+        
         console.log(res);
         alert("message sent successfully")
     }
