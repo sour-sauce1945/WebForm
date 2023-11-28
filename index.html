@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function validateEmail() {
+            
+            var emailInput = document.getElementById("email").value;
+           
+            var emailRegex = /^[a-zA-Z0-9._-]+@(gmail\.com|yahoo\.co\.in)$/;
+            
+            if (emailRegex.test(emailInput)) {
+                alert("Email is valid");
+            } else {
+                alert("Invalid emaildomain. ");
+            }
+        }
+    </script>
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -94,7 +109,7 @@
     </span>
       
     <h2>Please fill out the necessary fields </h2>
-    <form onsubmit="sendMail(); return false;">
+    <form onsubmit="validateEmail(); return sendMail();">
     <div class="form-container">
         
             <label for="fname"><h2>Enter your Name</h2></label><br>
